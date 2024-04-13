@@ -1,0 +1,3 @@
+I wanted to base my idea around a guitar, with different types of chords, (Major, minor and 7) being placed next to each other on each row
+
+It'll have 4 octaves of a basic Heptatonic scale, with a major, minor, and 7 variant, which are indicated by the systemic shapes 
