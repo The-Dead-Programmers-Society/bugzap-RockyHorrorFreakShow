@@ -1,0 +1,3 @@
+The idea was to have it be a 4 octave soundboard of a guitar in the basic C Major scale, with a major, minor and dominant version for each
+
+Each row is an octave, and each set of shapes is a scale (A, B, C, D, E, F, G, A)
