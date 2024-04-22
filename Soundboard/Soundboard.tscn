@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://cf75ybest2ykx"]
+
+[ext_resource type="AudioStream" uid="uid://dqmq0an7ig2oo" path="res://ambient-piano-logo-165357.mp3" id="1_mfeyj"]
+[ext_resource type="Script" path="res://Player.gd" id="1_p5w68"]
+[ext_resource type="Script" path="res://playscript.gd" id="2_kpw3c"]
+[ext_resource type="Script" path="res://Button2.gd" id="4_1fv0x"]
+
+[sub_resource type="AudioStream" id="AudioStream_ui7a3"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_p5w68")
+
+[node name="Button" type="Button" parent="."]
+offset_right = 136.0
+offset_bottom = 140.0
+action_mode = 0
+script = ExtResource("2_kpw3c")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Button"]
+stream = ExtResource("1_mfeyj")
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 135.0
+offset_right = 270.0
+offset_bottom = 140.0
+script = ExtResource("4_1fv0x")
+
+[node name="audio 2" type="AudioStreamPlayer" parent="Button2"]
+stream = SubResource("AudioStream_ui7a3")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ciok7hhgyoem3"]
+
+[ext_resource type="AudioStream" uid="uid://dqmq0an7ig2oo" path="res://ambient-piano-logo-165357.mp3" id="1_w7k0n"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_w7k0n")
