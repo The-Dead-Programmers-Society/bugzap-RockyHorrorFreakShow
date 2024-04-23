@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bau4ib6eobcmd"
+path="res://.godot/imported/e.wav-119b7bed6a15563d1befe2d9dc82f1ae.sample"
+
+[deps]
+
+source_file="res://high octave/e.wav"
+dest_files=["res://.godot/imported/e.wav-119b7bed6a15563d1befe2d9dc82f1ae.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

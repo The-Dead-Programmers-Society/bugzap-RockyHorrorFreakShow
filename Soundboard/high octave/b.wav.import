@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://caol23cwlknm7"
+path="res://.godot/imported/b.wav-5ed354dc7e3bc18337a9f8cbbdeb1ff9.sample"
+
+[deps]
+
+source_file="res://high octave/b.wav"
+dest_files=["res://.godot/imported/b.wav-5ed354dc7e3bc18337a9f8cbbdeb1ff9.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
