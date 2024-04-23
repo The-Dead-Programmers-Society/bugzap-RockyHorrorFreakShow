@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=3 uid="uid://t0tk3tiq8u4o"]
+[gd_scene load_steps=56 format=3 uid="uid://t0tk3tiq8u4o"]
 
 [ext_resource type="Script" path="res://High C Major 1.gd" id="1_57yg1"]
 [ext_resource type="AudioStream" uid="uid://b84k4idujpmg" path="res://high octave/c.wav" id="2_lakv0"]
@@ -49,6 +49,12 @@
 [ext_resource type="Script" path="res://low high c.gd" id="47_nj7ox"]
 [ext_resource type="AudioStream" uid="uid://b3o0yh1h82rnj" path="res://low octave/high c.wav" id="48_01wxk"]
 [ext_resource type="Texture2D" uid="uid://cmb6o6lyp5g8e" path="res://guitar.jpg" id="49_04etu"]
+[ext_resource type="Texture2D" uid="uid://jtmuv10aaej3" path="res://msx logo.png" id="49_nkiog"]
+[ext_resource type="Script" path="res://msx metal gear.gd" id="50_ugkma"]
+[ext_resource type="AudioStream" uid="uid://dghmgi36805gm" path="res://gameover.wav" id="51_q4das"]
+[ext_resource type="Texture2D" uid="uid://b1cse2vr87nia" path="res://metal gear png.png" id="53_8asbb"]
+[ext_resource type="Script" path="res://alert.gd" id="54_ilc6d"]
+[ext_resource type="AudioStream" uid="uid://bkc4lchs405w2" path="res://found.wav" id="55_sw3tk"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -506,13 +512,54 @@ metadata/_edit_use_anchors_ = true
 [node name="low high c" type="AudioStreamPlayer" parent="Control/low high c"]
 stream = ExtResource("48_01wxk")
 
+[node name="Sprite2D" type="Sprite2D" parent="Control/low high c"]
+position = Vector2(263, 156)
+scale = Vector2(0.835244, 0.798611)
+texture = ExtResource("49_nkiog")
+
+[node name="msx metal gear" type="Button" parent="Control/low high c/Sprite2D"]
+offset_left = -174.0
+offset_top = -69.0
+offset_right = 174.0
+offset_bottom = 68.0
+script = ExtResource("50_ugkma")
+
+[node name="msx metal gear" type="AudioStreamPlayer" parent="Control/low high c/Sprite2D/msx metal gear"]
+stream = ExtResource("51_q4das")
+
 [node name="Sprite2D" type="Sprite2D" parent="Control"]
-modulate = Color(0.960784, 0, 0.980392, 1)
+modulate = Color(0.972549, 0, 0.972549, 1)
 show_behind_parent = true
-position = Vector2(665.084, 442.111)
-rotation = 3.14159
-scale = Vector2(1.49807, 1.6289)
+position = Vector2(579, 321)
+rotation = 6.28318
+scale = Vector2(1.49149, 1.63568)
 texture = ExtResource("49_04etu")
+
+[node name="Sprite2D" type="Sprite2D" parent="Control/Sprite2D"]
+position = Vector2(-224.901, 228.443)
+
+[node name="Button" type="Button" parent="Control/Sprite2D"]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Control/Sprite2D/Button"]
+position = Vector2(254.548, -139.086)
+rotation = 0.785397
+scale = Vector2(0.261791, 0.269487)
+skew = 0.128224
+texture = ExtResource("53_8asbb")
+
+[node name="alert" type="Button" parent="."]
+show_behind_parent = true
+offset_left = 1008.0
+offset_top = 2.0
+offset_right = 1063.0
+offset_bottom = 215.0
+rotation = 0.785397
+script = ExtResource("54_ilc6d")
+
+[node name="alert" type="AudioStreamPlayer" parent="alert"]
+stream = ExtResource("55_sw3tk")
 
 [connection signal="pressed" from="Control/high c button" to="Control/high c button" method="_on_pressed"]
 [connection signal="pressed" from="Control/d" to="Control/d" method="_on_pressed"]
@@ -538,3 +585,5 @@ texture = ExtResource("49_04etu")
 [connection signal="pressed" from="Control/low a" to="Control/low a" method="_on_pressed"]
 [connection signal="pressed" from="Control/low b" to="Control/low b" method="_on_pressed"]
 [connection signal="pressed" from="Control/low high c" to="Control/low high c" method="_on_pressed"]
+[connection signal="pressed" from="Control/low high c/Sprite2D/msx metal gear" to="Control/low high c/Sprite2D/msx metal gear" method="_on_pressed"]
+[connection signal="pressed" from="alert" to="alert" method="_on_pressed"]
