@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://t0tk3tiq8u4o"]
+[gd_scene load_steps=62 format=3 uid="uid://t0tk3tiq8u4o"]
 
 [ext_resource type="Script" path="res://High C Major 1.gd" id="1_57yg1"]
 [ext_resource type="AudioStream" uid="uid://b84k4idujpmg" path="res://high octave/c.wav" id="2_lakv0"]
@@ -54,7 +54,43 @@
 [ext_resource type="AudioStream" uid="uid://dghmgi36805gm" path="res://gameover.wav" id="51_q4das"]
 [ext_resource type="Texture2D" uid="uid://b1cse2vr87nia" path="res://metal gear png.png" id="53_8asbb"]
 [ext_resource type="Script" path="res://alert.gd" id="54_ilc6d"]
+[ext_resource type="Script" path="res://drums.gd" id="54_renwk"]
+[ext_resource type="AudioStream" uid="uid://ctuycusuyalva" path="res://drums.wav" id="55_emjas"]
 [ext_resource type="AudioStream" uid="uid://bkc4lchs405w2" path="res://found.wav" id="55_sw3tk"]
+[ext_resource type="Script" path="res://drums 2.gd" id="56_dlwh8"]
+[ext_resource type="AudioStream" uid="uid://df1b3sbd0svmo" path="res://drums 2.wav" id="57_7le82"]
+
+[sub_resource type="GDScript" id="GDScript_eptlq"]
+script/source = "extends AudioStreamPlayer
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+
+"
+
+[sub_resource type="GDScript" id="GDScript_obole"]
+script/source = "extends AudioStreamPlayer
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+
+"
 
 [node name="Node2D" type="Node2D"]
 
@@ -80,6 +116,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="High c" type="AudioStreamPlayer" parent="Control/high c button"]
 stream = ExtResource("2_lakv0")
+script = SubResource("GDScript_eptlq")
 
 [node name="d" type="Button" parent="Control"]
 modulate = Color(0.280086, 1, 0.254727, 1)
@@ -99,6 +136,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="d" type="AudioStreamPlayer" parent="Control/d"]
 stream = ExtResource("4_bd1nl")
+script = SubResource("GDScript_obole")
 
 [node name="high e" type="Button" parent="Control"]
 modulate = Color(0.280086, 1, 0.254727, 1)
@@ -528,7 +566,7 @@ script = ExtResource("50_ugkma")
 stream = ExtResource("51_q4das")
 
 [node name="Sprite2D" type="Sprite2D" parent="Control"]
-modulate = Color(0.972549, 0, 0.972549, 1)
+modulate = Color(0.980392, 0, 1, 1)
 show_behind_parent = true
 position = Vector2(579, 321)
 rotation = 6.28318
@@ -548,6 +586,30 @@ rotation = 0.785397
 scale = Vector2(0.261791, 0.269487)
 skew = 0.128224
 texture = ExtResource("53_8asbb")
+
+[node name="drums" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 0
+offset_left = 16.0
+offset_right = 370.0
+offset_bottom = 58.0
+text = "DRUMS"
+script = ExtResource("54_renwk")
+
+[node name="drums" type="AudioStreamPlayer" parent="Control/drums"]
+stream = ExtResource("55_emjas")
+
+[node name="drums 2" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 0
+offset_left = 501.0
+offset_right = 828.0
+offset_bottom = 61.0
+text = "DRUMS 2"
+script = ExtResource("56_dlwh8")
+
+[node name="drums 2" type="AudioStreamPlayer" parent="Control/drums 2"]
+stream = ExtResource("57_7le82")
 
 [node name="alert" type="Button" parent="."]
 show_behind_parent = true
@@ -586,4 +648,6 @@ stream = ExtResource("55_sw3tk")
 [connection signal="pressed" from="Control/low b" to="Control/low b" method="_on_pressed"]
 [connection signal="pressed" from="Control/low high c" to="Control/low high c" method="_on_pressed"]
 [connection signal="pressed" from="Control/low high c/Sprite2D/msx metal gear" to="Control/low high c/Sprite2D/msx metal gear" method="_on_pressed"]
+[connection signal="pressed" from="Control/drums" to="Control/drums" method="_on_pressed"]
+[connection signal="pressed" from="Control/drums 2" to="Control/drums 2" method="_on_pressed"]
 [connection signal="pressed" from="alert" to="alert" method="_on_pressed"]

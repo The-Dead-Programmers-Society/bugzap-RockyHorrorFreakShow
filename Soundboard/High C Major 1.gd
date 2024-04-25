@@ -15,5 +15,3 @@ func _on_pressed():
 pass
 
 
-func _on_d_pressed():
-	pass # Replace with function body.

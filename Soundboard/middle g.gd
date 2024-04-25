@@ -12,3 +12,6 @@ func _process(delta):
 func _on_pressed():
 	$"middle g".play()
 pass
+
+
+
