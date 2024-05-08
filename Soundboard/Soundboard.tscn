@@ -1,0 +1,653 @@
+[gd_scene load_steps=62 format=3 uid="uid://t0tk3tiq8u4o"]
+
+[ext_resource type="Script" path="res://High C Major 1.gd" id="1_57yg1"]
+[ext_resource type="AudioStream" uid="uid://b84k4idujpmg" path="res://high octave/c.wav" id="2_lakv0"]
+[ext_resource type="Script" path="res://d.gd" id="3_hxj8d"]
+[ext_resource type="AudioStream" uid="uid://6womc4f4w5do" path="res://high octave/d.wav" id="4_bd1nl"]
+[ext_resource type="Script" path="res://high e.gd" id="5_5ckbx"]
+[ext_resource type="AudioStream" uid="uid://bau4ib6eobcmd" path="res://high octave/e.wav" id="6_8wiae"]
+[ext_resource type="Script" path="res://high f.gd" id="7_ymy54"]
+[ext_resource type="AudioStream" uid="uid://c48m8do37y16c" path="res://high octave/f.wav" id="8_bb8fr"]
+[ext_resource type="Script" path="res://high g.gd" id="9_vosdr"]
+[ext_resource type="AudioStream" uid="uid://dgvf6fc3ls35f" path="res://high octave/g.wav" id="10_e0ag7"]
+[ext_resource type="Script" path="res://high a.gd" id="11_hglaw"]
+[ext_resource type="AudioStream" uid="uid://dsxy5x35troov" path="res://high octave/a.wav" id="12_xu67x"]
+[ext_resource type="Script" path="res://high b.gd" id="13_tsl6h"]
+[ext_resource type="AudioStream" uid="uid://caol23cwlknm7" path="res://high octave/b.wav" id="14_gxjy1"]
+[ext_resource type="Script" path="res://high high c.gd" id="15_wxj62"]
+[ext_resource type="AudioStream" uid="uid://c8sxsr8rakbuh" path="res://high octave/c high.wav" id="16_6b3md"]
+[ext_resource type="Script" path="res://Middle c.gd" id="17_kgw2m"]
+[ext_resource type="AudioStream" uid="uid://cuwpuf75qal56" path="res://middle octave/c major.wav" id="18_124qv"]
+[ext_resource type="Script" path="res://middle d.gd" id="19_52p6f"]
+[ext_resource type="AudioStream" uid="uid://cxejhjvk21npf" path="res://middle octave/d major.wav" id="20_rfyag"]
+[ext_resource type="Script" path="res://middle e.gd" id="21_n6nsw"]
+[ext_resource type="AudioStream" uid="uid://crm7q17gkeweg" path="res://middle octave/e major.wav" id="22_q8nik"]
+[ext_resource type="Script" path="res://middle f.gd" id="23_sreja"]
+[ext_resource type="AudioStream" uid="uid://c2mnbhuvaflws" path="res://middle octave/f major.wav" id="24_k2nok"]
+[ext_resource type="Script" path="res://middle g.gd" id="25_s1tot"]
+[ext_resource type="AudioStream" uid="uid://c4fqpkulqtpo7" path="res://middle octave/g major.wav" id="26_1ea3f"]
+[ext_resource type="Script" path="res://middle a.gd" id="27_eid3h"]
+[ext_resource type="AudioStream" uid="uid://rl30begvdx5y" path="res://middle octave/a major.wav" id="28_ywbmc"]
+[ext_resource type="Script" path="res://middle b.gd" id="29_tiaol"]
+[ext_resource type="AudioStream" uid="uid://efwbi333mffh" path="res://middle octave/b major.wav" id="30_f2keo"]
+[ext_resource type="Script" path="res://middle high c.gd" id="31_d5ow3"]
+[ext_resource type="AudioStream" uid="uid://lnyi36e4ejf6" path="res://middle octave/high c major.wav" id="32_l6exj"]
+[ext_resource type="Script" path="res://low c.gd" id="33_jtbtw"]
+[ext_resource type="AudioStream" uid="uid://o0xo704yky84" path="res://low octave/c.wav" id="34_knsi8"]
+[ext_resource type="Script" path="res://low d.gd" id="35_dwtkm"]
+[ext_resource type="Script" path="res://low b.gd" id="35_fv37u"]
+[ext_resource type="AudioStream" uid="uid://dwchblknro8he" path="res://low octave/d.wav" id="36_bq4ru"]
+[ext_resource type="AudioStream" uid="uid://ypwiujekyu30" path="res://low octave/b.wav" id="36_fkx25"]
+[ext_resource type="Script" path="res://low e.gd" id="37_54nbu"]
+[ext_resource type="AudioStream" uid="uid://bucfkpuhpdw0d" path="res://low octave/e.wav" id="38_50dvn"]
+[ext_resource type="Script" path="res://low f.gd" id="39_5001q"]
+[ext_resource type="AudioStream" uid="uid://culhojvqrlhx0" path="res://low octave/f.wav" id="40_wgfcu"]
+[ext_resource type="Script" path="res://low g.gd" id="41_ktbva"]
+[ext_resource type="AudioStream" uid="uid://cbbuy3vgwpilq" path="res://low octave/g.wav" id="42_hyqw1"]
+[ext_resource type="Script" path="res://low a.gd" id="43_jf47e"]
+[ext_resource type="AudioStream" uid="uid://dp46vaflqx1ww" path="res://low octave/a.wav" id="44_whm3d"]
+[ext_resource type="Script" path="res://low high c.gd" id="47_nj7ox"]
+[ext_resource type="AudioStream" uid="uid://b3o0yh1h82rnj" path="res://low octave/high c.wav" id="48_01wxk"]
+[ext_resource type="Texture2D" uid="uid://cmb6o6lyp5g8e" path="res://guitar.jpg" id="49_04etu"]
+[ext_resource type="Texture2D" uid="uid://jtmuv10aaej3" path="res://msx logo.png" id="49_nkiog"]
+[ext_resource type="Script" path="res://msx metal gear.gd" id="50_ugkma"]
+[ext_resource type="AudioStream" uid="uid://dghmgi36805gm" path="res://gameover.wav" id="51_q4das"]
+[ext_resource type="Texture2D" uid="uid://b1cse2vr87nia" path="res://metal gear png.png" id="53_8asbb"]
+[ext_resource type="Script" path="res://alert.gd" id="54_ilc6d"]
+[ext_resource type="Script" path="res://drums.gd" id="54_renwk"]
+[ext_resource type="AudioStream" uid="uid://ctuycusuyalva" path="res://drums.wav" id="55_emjas"]
+[ext_resource type="AudioStream" uid="uid://bkc4lchs405w2" path="res://found.wav" id="55_sw3tk"]
+[ext_resource type="Script" path="res://drums 2.gd" id="56_dlwh8"]
+[ext_resource type="AudioStream" uid="uid://df1b3sbd0svmo" path="res://drums 2.wav" id="57_7le82"]
+
+[sub_resource type="GDScript" id="GDScript_eptlq"]
+script/source = "extends AudioStreamPlayer
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+
+"
+
+[sub_resource type="GDScript" id="GDScript_obole"]
+script/source = "extends AudioStreamPlayer
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+
+"
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1151.0
+offset_bottom = 647.0
+
+[node name="high c button" type="Button" parent="Control"]
+modulate = Color(0.278431, 1, 0.254902, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0338836
+anchor_top = 0.111283
+anchor_right = 0.0755864
+anchor_bottom = 0.174652
+offset_right = 43.0
+offset_bottom = 86.0
+text = "C"
+script = ExtResource("1_57yg1")
+metadata/_edit_use_anchors_ = true
+
+[node name="High c" type="AudioStreamPlayer" parent="Control/high c button"]
+stream = ExtResource("2_lakv0")
+script = SubResource("GDScript_eptlq")
+
+[node name="d" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0781929
+anchor_top = 0.1051
+anchor_right = 0.122502
+anchor_bottom = 0.176198
+offset_left = 45.0
+offset_top = 1.0
+offset_right = 89.0
+offset_bottom = 86.0
+text = "D"
+script = ExtResource("3_hxj8d")
+metadata/_edit_use_anchors_ = true
+
+[node name="d" type="AudioStreamPlayer" parent="Control/d"]
+stream = ExtResource("4_bd1nl")
+script = SubResource("GDScript_obole")
+
+[node name="high e" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.126846
+anchor_top = 0.109737
+anchor_right = 0.163336
+anchor_bottom = 0.174652
+offset_left = 90.0
+offset_top = 1.0
+offset_right = 134.0
+offset_bottom = 86.0
+text = "E"
+script = ExtResource("5_5ckbx")
+metadata/_edit_use_anchors_ = true
+
+[node name="high e" type="AudioStreamPlayer" parent="Control/high e"]
+stream = ExtResource("6_8wiae")
+
+[node name="high f" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.16768
+anchor_top = 0.108192
+anchor_right = 0.205039
+anchor_bottom = 0.174652
+offset_left = 135.0
+offset_right = 182.0
+offset_bottom = 87.0
+text = "F"
+script = ExtResource("7_ymy54")
+metadata/_edit_use_anchors_ = true
+
+[node name="high f" type="AudioStreamPlayer" parent="Control/high f"]
+stream = ExtResource("8_bb8fr")
+
+[node name="high g" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.206777
+anchor_top = 0.111283
+anchor_right = 0.250217
+anchor_bottom = 0.173107
+offset_left = 185.0
+offset_right = 233.0
+offset_bottom = 87.0
+text = "G"
+script = ExtResource("9_vosdr")
+metadata/_edit_use_anchors_ = true
+
+[node name="high g" type="AudioStreamPlayer" parent="Control/high g"]
+stream = ExtResource("10_e0ag7")
+
+[node name="high a" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.252824
+anchor_top = 0.111283
+anchor_right = 0.298871
+anchor_bottom = 0.170015
+offset_left = 236.0
+offset_right = 281.0
+offset_bottom = 89.0
+text = "A"
+script = ExtResource("11_hglaw")
+metadata/_edit_use_anchors_ = true
+
+[node name="high a" type="AudioStreamPlayer" parent="Control/high a"]
+stream = ExtResource("12_xu67x")
+
+[node name="high b" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.299739
+anchor_top = 0.109737
+anchor_right = 0.344917
+anchor_bottom = 0.171561
+offset_left = 285.0
+offset_right = 330.0
+offset_bottom = 90.0
+text = "B"
+script = ExtResource("13_tsl6h")
+metadata/_edit_use_anchors_ = true
+
+[node name="high b" type="AudioStreamPlayer" parent="Control/high b"]
+stream = ExtResource("14_gxjy1")
+
+[node name="high high c" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.346655
+anchor_top = 0.109737
+anchor_right = 0.387489
+anchor_bottom = 0.163833
+offset_left = 333.0
+offset_right = 380.0
+offset_bottom = 94.0
+text = "C"
+icon_alignment = 1
+script = ExtResource("15_wxj62")
+metadata/_edit_use_anchors_ = true
+
+[node name="high high c" type="AudioStreamPlayer" parent="Control/high high c"]
+stream = ExtResource("16_6b3md")
+
+[node name="Middle c" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.032146
+anchor_top = 0.122102
+anchor_right = 0.0695048
+anchor_bottom = 0.23493
+offset_top = 149.0
+offset_right = 44.0
+offset_bottom = 241.0
+text = "C"
+script = ExtResource("17_kgw2m")
+metadata/_edit_use_anchors_ = true
+
+[node name="middle c" type="AudioStreamPlayer" parent="Control/Middle c"]
+stream = ExtResource("18_124qv")
+
+[node name="middle d" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0747176
+anchor_top = 0.123648
+anchor_right = 0.121633
+anchor_bottom = 0.230294
+offset_left = 46.0
+offset_top = 149.0
+offset_right = 93.0
+offset_bottom = 241.0
+text = "D"
+script = ExtResource("19_52p6f")
+metadata/_edit_use_anchors_ = true
+
+[node name="middle d" type="AudioStreamPlayer" parent="Control/middle d"]
+stream = ExtResource("20_rfyag")
+
+[node name="middle e" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.123371
+anchor_top = 0.122102
+anchor_right = 0.165943
+anchor_bottom = 0.222566
+offset_left = 96.0
+offset_top = 151.0
+offset_right = 141.0
+offset_bottom = 242.0
+text = "E"
+script = ExtResource("21_n6nsw")
+metadata/_edit_use_anchors_ = true
+
+[node name="middle e" type="AudioStreamPlayer" parent="Control/middle e"]
+stream = ExtResource("22_q8nik")
+
+[node name="middle f" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.164205
+anchor_top = 0.123648
+anchor_right = 0.203301
+anchor_bottom = 0.227202
+offset_left = 143.0
+offset_top = 149.0
+offset_right = 188.0
+offset_bottom = 244.0
+text = "F"
+script = ExtResource("23_sreja")
+metadata/_edit_use_anchors_ = true
+
+[node name="middle f" type="AudioStreamPlayer" parent="Control/middle f"]
+stream = ExtResource("24_k2nok")
+
+[node name="middle g" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.203301
+anchor_top = 0.125193
+anchor_right = 0.24848
+anchor_bottom = 0.213292
+offset_left = 190.0
+offset_top = 147.0
+offset_right = 237.0
+offset_bottom = 245.0
+text = "G"
+script = ExtResource("25_s1tot")
+metadata/_edit_use_anchors_ = true
+
+[node name="middle g" type="AudioStreamPlayer" parent="Control/middle g"]
+stream = ExtResource("26_1ea3f")
+
+[node name="middle a" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.249348
+anchor_top = 0.119011
+anchor_right = 0.297133
+anchor_bottom = 0.224111
+offset_left = 238.0
+offset_top = 147.0
+offset_right = 283.0
+offset_bottom = 247.0
+text = "A"
+script = ExtResource("27_eid3h")
+metadata/_edit_use_anchors_ = true
+
+[node name="middle a" type="AudioStreamPlayer" parent="Control/middle a"]
+stream = ExtResource("28_ywbmc")
+
+[node name="middle b" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.296264
+anchor_top = 0.111283
+anchor_right = 0.342311
+anchor_bottom = 0.228748
+offset_left = 286.0
+offset_top = 148.0
+offset_right = 335.0
+offset_bottom = 247.0
+text = "B"
+script = ExtResource("29_tiaol")
+metadata/_edit_use_anchors_ = true
+
+[node name="middle b" type="AudioStreamPlayer" parent="Control/middle b"]
+stream = ExtResource("30_f2keo")
+
+[node name="middle high c" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.34318
+anchor_top = 0.1051
+anchor_right = 0.387489
+anchor_bottom = 0.24575
+offset_left = 336.0
+offset_top = 150.0
+offset_right = 384.0
+offset_bottom = 247.0
+text = "C"
+script = ExtResource("31_d5ow3")
+metadata/_edit_use_anchors_ = true
+
+[node name="middle high c" type="AudioStreamPlayer" parent="Control/middle high c"]
+stream = ExtResource("32_l6exj")
+
+[node name="low c" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0312771
+anchor_top = 0.174652
+anchor_right = 0.0721112
+anchor_bottom = 0.256569
+offset_top = 311.0
+offset_right = 46.0
+offset_bottom = 405.0
+text = "C"
+script = ExtResource("33_jtbtw")
+metadata/_edit_use_anchors_ = true
+
+[node name="low c" type="AudioStreamPlayer" parent="Control/low c"]
+stream = ExtResource("34_knsi8")
+
+[node name="low d" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.07298
+anchor_top = 0.176198
+anchor_right = 0.120765
+anchor_bottom = 0.253478
+offset_left = 48.0
+offset_top = 311.0
+offset_right = 94.0
+offset_bottom = 406.0
+text = "D"
+script = ExtResource("35_dwtkm")
+metadata/_edit_use_anchors_ = true
+
+[node name="low d" type="AudioStreamPlayer" parent="Control/low d"]
+stream = ExtResource("36_bq4ru")
+
+[node name="low e" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.120765
+anchor_top = 0.176198
+anchor_right = 0.16073
+anchor_bottom = 0.258114
+offset_left = 97.0
+offset_top = 310.0
+offset_right = 143.0
+offset_bottom = 406.0
+text = "E"
+script = ExtResource("37_54nbu")
+metadata/_edit_use_anchors_ = true
+
+[node name="low e" type="AudioStreamPlayer" parent="Control/low e"]
+stream = ExtResource("38_50dvn")
+
+[node name="low f" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.161599
+anchor_top = 0.174652
+anchor_right = 0.198957
+anchor_bottom = 0.256569
+offset_left = 146.0
+offset_top = 311.0
+offset_right = 191.0
+offset_bottom = 406.0
+text = "F"
+script = ExtResource("39_5001q")
+metadata/_edit_use_anchors_ = true
+
+[node name="low f" type="AudioStreamPlayer" parent="Control/low f"]
+stream = ExtResource("40_wgfcu")
+
+[node name="low g" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.200695
+anchor_top = 0.177743
+anchor_right = 0.244136
+anchor_bottom = 0.25966
+offset_left = 193.0
+offset_top = 310.0
+offset_right = 238.0
+offset_bottom = 406.0
+text = "G"
+script = ExtResource("41_ktbva")
+metadata/_edit_use_anchors_ = true
+
+[node name="low g" type="AudioStreamPlayer" parent="Control/low g"]
+stream = ExtResource("42_hyqw1")
+
+[node name="low a" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.246742
+anchor_top = 0.174652
+anchor_right = 0.29192
+anchor_bottom = 0.25966
+offset_left = 239.0
+offset_top = 311.0
+offset_right = 284.0
+offset_bottom = 405.0
+text = "A"
+script = ExtResource("43_jf47e")
+metadata/_edit_use_anchors_ = true
+
+[node name="low a" type="AudioStreamPlayer" parent="Control/low a"]
+stream = ExtResource("44_whm3d")
+
+[node name="low b" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.293658
+anchor_top = 0.176198
+anchor_right = 0.339705
+anchor_bottom = 0.258114
+offset_left = 285.0
+offset_top = 310.0
+offset_right = 334.0
+offset_bottom = 406.0
+text = "B"
+script = ExtResource("35_fv37u")
+metadata/_edit_use_anchors_ = true
+
+[node name="low b" type="AudioStreamPlayer" parent="Control/low b"]
+stream = ExtResource("36_fkx25")
+
+[node name="low high c" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.340573
+anchor_top = 0.177743
+anchor_right = 0.390964
+anchor_bottom = 0.258114
+offset_left = 337.0
+offset_top = 309.0
+offset_right = 387.0
+offset_bottom = 406.0
+text = "C"
+script = ExtResource("47_nj7ox")
+metadata/_edit_use_anchors_ = true
+
+[node name="low high c" type="AudioStreamPlayer" parent="Control/low high c"]
+stream = ExtResource("48_01wxk")
+
+[node name="Sprite2D" type="Sprite2D" parent="Control/low high c"]
+position = Vector2(263, 156)
+scale = Vector2(0.835244, 0.798611)
+texture = ExtResource("49_nkiog")
+
+[node name="msx metal gear" type="Button" parent="Control/low high c/Sprite2D"]
+offset_left = -174.0
+offset_top = -69.0
+offset_right = 174.0
+offset_bottom = 68.0
+script = ExtResource("50_ugkma")
+
+[node name="msx metal gear" type="AudioStreamPlayer" parent="Control/low high c/Sprite2D/msx metal gear"]
+stream = ExtResource("51_q4das")
+
+[node name="Sprite2D" type="Sprite2D" parent="Control"]
+modulate = Color(0.980392, 0, 1, 1)
+show_behind_parent = true
+position = Vector2(579, 321)
+rotation = 6.28318
+scale = Vector2(1.49149, 1.63568)
+texture = ExtResource("49_04etu")
+
+[node name="Sprite2D" type="Sprite2D" parent="Control/Sprite2D"]
+position = Vector2(-224.901, 228.443)
+
+[node name="Button" type="Button" parent="Control/Sprite2D"]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Control/Sprite2D/Button"]
+position = Vector2(254.548, -139.086)
+rotation = 0.785397
+scale = Vector2(0.261791, 0.269487)
+skew = 0.128224
+texture = ExtResource("53_8asbb")
+
+[node name="drums" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 0
+offset_left = 16.0
+offset_right = 370.0
+offset_bottom = 58.0
+text = "DRUMS"
+script = ExtResource("54_renwk")
+
+[node name="drums" type="AudioStreamPlayer" parent="Control/drums"]
+stream = ExtResource("55_emjas")
+
+[node name="drums 2" type="Button" parent="Control"]
+modulate = Color(0.280086, 1, 0.254727, 1)
+layout_mode = 0
+offset_left = 501.0
+offset_right = 828.0
+offset_bottom = 61.0
+text = "DRUMS 2"
+script = ExtResource("56_dlwh8")
+
+[node name="drums 2" type="AudioStreamPlayer" parent="Control/drums 2"]
+stream = ExtResource("57_7le82")
+
+[node name="alert" type="Button" parent="."]
+show_behind_parent = true
+offset_left = 1008.0
+offset_top = 2.0
+offset_right = 1063.0
+offset_bottom = 215.0
+rotation = 0.785397
+script = ExtResource("54_ilc6d")
+
+[node name="alert" type="AudioStreamPlayer" parent="alert"]
+stream = ExtResource("55_sw3tk")
+
+[connection signal="pressed" from="Control/high c button" to="Control/high c button" method="_on_pressed"]
+[connection signal="pressed" from="Control/d" to="Control/d" method="_on_pressed"]
+[connection signal="pressed" from="Control/high e" to="Control/high e" method="_on_pressed"]
+[connection signal="pressed" from="Control/high f" to="Control/high f" method="_on_pressed"]
+[connection signal="pressed" from="Control/high g" to="Control/high g" method="_on_pressed"]
+[connection signal="pressed" from="Control/high a" to="Control/high a" method="_on_pressed"]
+[connection signal="pressed" from="Control/high b" to="Control/high b" method="_on_pressed"]
+[connection signal="pressed" from="Control/high high c" to="Control/high high c" method="_on_pressed"]
+[connection signal="pressed" from="Control/Middle c" to="Control/Middle c" method="_on_pressed"]
+[connection signal="pressed" from="Control/middle d" to="Control/middle d" method="_on_pressed"]
+[connection signal="pressed" from="Control/middle e" to="Control/middle e" method="_on_pressed"]
+[connection signal="pressed" from="Control/middle f" to="Control/middle f" method="_on_pressed"]
+[connection signal="pressed" from="Control/middle g" to="Control/middle g" method="_on_pressed"]
+[connection signal="pressed" from="Control/middle a" to="Control/middle a" method="_on_pressed"]
+[connection signal="pressed" from="Control/middle b" to="Control/middle b" method="_on_pressed"]
+[connection signal="pressed" from="Control/middle high c" to="Control/middle high c" method="_on_pressed"]
+[connection signal="pressed" from="Control/low c" to="Control/low c" method="_on_pressed"]
+[connection signal="pressed" from="Control/low d" to="Control/low d" method="_on_pressed"]
+[connection signal="pressed" from="Control/low e" to="Control/low e" method="_on_pressed"]
+[connection signal="pressed" from="Control/low f" to="Control/low f" method="_on_pressed"]
+[connection signal="pressed" from="Control/low g" to="Control/low g" method="_on_pressed"]
+[connection signal="pressed" from="Control/low a" to="Control/low a" method="_on_pressed"]
+[connection signal="pressed" from="Control/low b" to="Control/low b" method="_on_pressed"]
+[connection signal="pressed" from="Control/low high c" to="Control/low high c" method="_on_pressed"]
+[connection signal="pressed" from="Control/low high c/Sprite2D/msx metal gear" to="Control/low high c/Sprite2D/msx metal gear" method="_on_pressed"]
+[connection signal="pressed" from="Control/drums" to="Control/drums" method="_on_pressed"]
+[connection signal="pressed" from="Control/drums 2" to="Control/drums 2" method="_on_pressed"]
+[connection signal="pressed" from="alert" to="alert" method="_on_pressed"]
